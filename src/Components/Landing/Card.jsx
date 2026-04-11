@@ -13,6 +13,8 @@ function Card() {
       <img src="https://image.shutterstock.com/image-photo/various-fruits-milk-shake-glass-250nw-1902796294.jpg" alt="hero" />
     </div>
 
+    
+
     </div>
   )
 }

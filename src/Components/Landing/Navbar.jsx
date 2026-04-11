@@ -24,12 +24,12 @@ function Navbar() {
       />
 
       {/* LOGIN BUTTON */}
-      <a
-        onClick={() => setShowLogin(true)}
-        className="cursor-pointer text-gray-600 font-bold"
-      >
-        login
-      </a>
+      
+
+      <a onClick={()=>setShowLogin(true)}
+       className="cursor-pointer text-gray-600 font-bold" >Login</a>
+
+
 
       <button className='h-12 w-30 font-bold bg-gray-200 text-black text-sm rounded'>
         My Cart
