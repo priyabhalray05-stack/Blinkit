@@ -8,7 +8,7 @@ import Backery from '../Components/Landing/Backery'
 import Snacks from '../Components/Landing/Snacks'
 import Discription from '../Components/Landing/Discription'
 import Footer from '../Components/Landing/Footer'
-
+import Zero from  '../Components/Landing/Zero'
 function Landing() {
   return (
     <div>
@@ -21,6 +21,7 @@ function Landing() {
       <Snacks/>
       <Discription/>
       <Footer/>
+      <Zero/>
     </div>
   )
 }

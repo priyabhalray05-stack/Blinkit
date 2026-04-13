@@ -4,22 +4,22 @@ function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <div className='pt-8 flex justify-around cursor-pointer relative'>
+    <div className='pt-6 flex justify-evenly cursor-pointer relative w-full pl-4'>
 
-      <h1 className='text-amber-300 text-4xl font-extrabold'>
+      <h1 className='text-amber-300 text-5xl font-bold pr-10 pl-4'>
         blink<span className='text-green-600'>it</span>
       </h1>
 
-      <p className='text-black text-xl font-bold'>
+      <p className='text-black text-xl font-bold pr-4'>
         Delivery in 12 minutes <br />
-        <span className='text-sm font-light'>
-          76,Shakambhari Ave,Bhawarshala
+        <span className='text-sm font-light '>
+          76,Shakambhari Ave, Bhawarshala
         </span>
       </p>
 
       <input
         type="text"
-        className='bg-gray-100 h-10 w-100 rounded p-3'
+        className='bg-gray-100 h-12 w-110 rounded-xl mt-2 pl-4 :'
         placeholder='Search'
       />
 
@@ -27,11 +27,11 @@ function Navbar() {
       
 
       <a onClick={()=>setShowLogin(true)}
-       className="cursor-pointer text-gray-600 font-bold" >Login</a>
+       className="cursor-pointer text-gray-600 pt-6 pl-12 text-xl" >Login</a>
 
 
 
-      <button className='h-12 w-30 font-bold bg-gray-200 text-black text-sm rounded'>
+      <button className='h-12 w-30 font-bold bg-gray-200 text-white text-sm rounded-xl ml-10 mt-3'>
         My Cart
       </button>
 
