@@ -4,77 +4,74 @@ function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <div className='pt-6 flex justify-evenly cursor-pointer relative w-full pl-4'>
+    <>
+      {/* ================= NAVBAR ================= */}
+      <div className='fixed top-0 left-0 w-full z-50 pt-4  flex justify-around items-center px-4  bg-white shadow-md pb-2 '>
 
-      <h1 className='text-amber-300 text-5xl font-bold pr-10 pl-4'>
-        blink<span className='text-green-600'>it</span>
-      </h1>
+        <h1 className='text-amber-300 text-5xl font-bold'>
+          blink<span className='text-green-600'>it</span>
+        </h1>
 
-      <p className='text-black text-xl font-bold pr-4'>
-        Delivery in 12 minutes <br />
-        <span className='text-sm font-light '>
-          76,Shakambhari Ave, Bhawarshala
-        </span>
-      </p>
+        <p onClick={()=>setShowLogin(true)} className='text-black text-xl font-bold'>
+          Delivery in 12 minutes <br />
+          <span className='text-sm font-light'>
+            76,Shakambhari Ave, Bhawarshala
+          </span>
+        </p>
 
-      <input
-        type="text"
-        className='bg-gray-100 h-12 w-110 rounded-xl mt-2 pl-4 :'
-        placeholder='Search'
-      />
+        <input
+          type="text"
+          className='bg-gray-100 h-10 w-[650px] rounded-xl mx-6 px-4 outline-none'
+          placeholder='Search'
+        />
 
-      {/* LOGIN BUTTON */}
-      
+        <button 
+          onClick={() => setShowLogin(true)}
+          className="text-gray-600"
+        >
+          Login
+        </button>
 
-      <a onClick={()=>setShowLogin(true)}
-       className="cursor-pointer text-gray-600 pt-6 pl-12 text-xl" >Login</a>
+        <button  className='h-12 px-8 font-bold bg-gray-200 text-white text-sm rounded-xl ml-4 cursor-not-allowed'>
+          My Cart
+        </button>
+      </div>
 
-
-
-      <button className='h-12 w-30 font-bold bg-gray-200 text-white text-sm rounded-xl ml-10 mt-3'>
-        My Cart
-      </button>
-
-      {/* ================= POPUP ================= */}
+      {/* ================= LOGIN POPUP ================= */}
       {showLogin && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
 
-          <div className="bg-white p-6 rounded-lg w-80 shadow-lg">
+          <div className="bg-white p-6 rounded-lg w-[550px] h-[340px] shadow-lg">
 
-            <h2 className="text-xl font-bold mb-3">Login</h2>
+            <h2 className="text-xl font-bold text-center pt-18">
+              India's last minute app
+            </h2>
+
+            <p className='text-black text-center pb-4'>
+              Log in or Sign up
+            </p>
 
             <input
-              type="text"
-              placeholder="Email"
-              className="w-full border p-2 rounded mb-2"
+              type="tel"
+              placeholder="Enter Mobile Number"
+              className="w-[300px] border-2 p-2 pl-8 mx-[100px] rounded-lg mb-2"
             />
 
-            <input
-              type="password"
-              placeholder="Password"
-              className="w-full border p-2 rounded mb-4"
-            />
+            <button
+              onClick={() => setShowLogin(false)}
+              className="bg-gray-400 text-white py-2 rounded-lg w-[300px] mx-25 my-4"
+            >
+              Continue
+            </button>
 
-            <div className="flex justify-between">
-
-              <button
-                onClick={() => setShowLogin(false)}
-                className="bg-gray-300 px-3 py-1 rounded"
-              >
-                Close
-              </button>
-
-              <button className="bg-green-600 text-white px-3 py-1 rounded">
-                Login
-              </button>
-
-            </div>
+            <p className='text-gray-300 pl-12 text-sm pt-4'>
+              By continuing, you agree to our Terms of service & Privacy policy
+            </p>
 
           </div>
         </div>
       )}
-
-    </div>
+    </>
   )
 }
 
