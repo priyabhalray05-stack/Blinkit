@@ -2,7 +2,7 @@ import React from 'react'
 
 function Discription() {
   return (
-    <div className='w-full flex'>
+    <div className='w-full flex pl-12'>
       <div>
         <h5 className='pt-25 pl-5 font-bold text-xl'> Useful Links</h5>
         <div className='flex gap-15 px-4 pt-6  list-none'>

@@ -2,8 +2,8 @@ import React from 'react'
 
 function Pharmacy() {
   return (
-    <div className='flex mt-8 mx-6 gap-8'>
-      <div className='h-[220px] w-[350px] px-2 py-6 bg-gradient-to-r from-sky-400 to-sky-500 flex  justify-between rounded-2xl'>
+    <div className='flex mt-8 mx-8 gap-8'>
+      <div className='h-[220px] w-[350px] px-2 py-6 bg-gradient-to-r from-sky-600 to-cyan-500 flex  justify-between rounded-2xl'>
        <div className='px-2'>
          <h1 className='text-white text-2xl font-extrabold '>Pharmacy at <br />your doorstep!</h1>
           <p className='text-white pt-2'>Cough syrups, pain

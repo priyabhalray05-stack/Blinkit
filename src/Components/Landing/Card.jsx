@@ -2,28 +2,47 @@ import React from 'react'
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 
-
 function Card() {
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
   return (
-  <div className='flex justify-evenly  bg-gradient-to-r from-green-700 to-green-400  h-[220px] w-full   mt-24  ml-6'>
-    <div className=''>
-      <h1 className='text-white text-4xl font-bold pl-8 pt-5 pb-2'>Stock up on daily essentials</h1>
-      <p className='text-white text-2xl pl-8 '>Get farm-fresh goodness & a range of exotic <br />fruits, vegetables, eggs & more</p>
-      <Link to="/Shopping">
-      <button onClick={()=> navigate("/Shopping")} className='h-[50px] w-[120px] rounded text-xl bg-white m-2 mt-4 ml-8 font-bold'>
-       Shop Now</button>
-     </Link>
-    </div>
-    <div className='h-[200px] w-[470px]  mt-1  ' >
-      <img src="image1.png" alt="hero" className='' />
+    <div className='  w-full'>
+    <div className='relative flex h-[320px] mt-32 mx-6 overflow-hidden rounded-2xl pt-10'>
+
+      {/* 🔻 Background Image */}
+      <img 
+        src="image1.png" 
+        alt="hero"
+        className='absolute right-0 top-0 h-full  w-[50%] object-cover z-0'
+      />
+
+      {/* 🔻 Gradient Overlay (MAIN MAGIC) */}
+      <div className='absolute inset-0 bg-gradient-to-r from-green-800 via-green-500 to-transparent z-10'></div>
+
+      {/* 🔻 Content */}
+      <div className='relative z-20  '>
+        <h1 className='text-white text-5xl font-bold pl-8 pt-5 pb-2'>
+          Stock up on daily essentials
+        </h1>
+
+        <p className='text-white text-2xl pl-8'>
+          Get farm-fresh goodness & a range of exotic <br />
+          fruits, vegetables, eggs & more
+        </p>
+
+        <Link to="/Shopping">
+          <button 
+            onClick={()=> navigate("/Shopping")} 
+            className='h-[50px] w-[120px] rounded text-xl bg-white  mt-6 ml-8 font-bold'>
+            Shop Now
+          </button>
+        </Link>
       </div>
+      
 
-    
-
+    </div>
     </div>
   )
 }
- 
+
 export default Card

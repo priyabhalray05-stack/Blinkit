@@ -28,46 +28,46 @@
 
 
 
-import React from 'react'
-import { useNavigate } from "react-router-dom"
+// import React from 'react'
+// import { useNavigate } from "react-router-dom"
 
-function Zero() {
-  const navigate = useNavigate()
+// function Zero() {
+//   const navigate = useNavigate()
 
-  return (
-    <div className='h-full w-full border border-red-500 flex relative overflow-hidden ' >
+//   return (
+//     <div className='h-full w-full border border-red-500 flex relative overflow-hidden ' >
 
-      {/* Text Section (on top of image) */}
-      <div className='relative z-10 p-8'>
-        <h1 className='text-white text-4xl font-bold pb-2'>
-          Stock up on daily essentials
-        </h1>
+//       {/* Text Section (on top of image) */}
+//       <div className='relative z-10 p-8'>
+//         <h1 className='text-white text-4xl font-bold pb-2'>
+//           Stock up on daily essentials
+//         </h1>
 
-        <p className='text-white text-2xl'>
-          Get farm-fresh goodness & a range of exotic <br />
-          fruits, vegetables, eggs & more
-        </p>
+//         <p className='text-white text-2xl'>
+//           Get farm-fresh goodness & a range of exotic <br />
+//           fruits, vegetables, eggs & more
+//         </p>
 
-        <button
-          onClick={() => navigate("/Shopping")}
-          className='h-[50px] w-[120px] rounded text-xl bg-white m-2 mt-4 font-bold'
-        >
-          Shop Now
-        </button>
-      </div>
+//         <button
+//           onClick={() => navigate("/Shopping")}
+//           className='h-[50px] w-[120px] rounded text-xl bg-white m-2 mt-4 font-bold'
+//         >
+//           Shop Now
+//         </button>
+//       </div>
 
-      {/* Image (background layer) */}
-      <img
-        src="image1.png"
-        alt=""
-        className='absolute top-0 left-0 h-full w-full object-cover z-0'
-      />
+//       {/* Image (background layer) */}
+//       <img
+//         src="image1.png"
+//         alt=""
+//         className='absolute top-0 left-0 h-full w-full object-cover z-0'
+//       />
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Zero
+// export default Zero
 
 
 

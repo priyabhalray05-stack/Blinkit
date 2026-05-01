@@ -46,46 +46,95 @@ const Hariyali=[
    Add:"ADD",
   }, 
   {
-   img:"https://www.bing.com/th/id/OIP.xc38bPAhfWV-4GXCKnFLpgAAAA?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
-   name:"Green Chilli (Hari Mirch)",
+   img:"https://voila.ca/images-v3/2d92d19c-0354-49c0-8a91-5260ed0bf531/11c09b0b-050a-4ecf-b952-4aeef1f0743e/300x300.jpg",
+   name:"Coriander (Dhaniya)",
    weight:"100g",
    price:"18",
    Add:"ADD",
   }, 
    {
-   img:"https://www.bing.com/th/id/OIP.xc38bPAhfWV-4GXCKnFLpgAAAA?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
-   name:"Green Chilli (Hari Mirch)",
+   img:"https://tse2.mm.bing.net/th/id/OIP.vucVoWE859aqKsKLXsX6QwHaHa?cb=thfvnext&pid=ImgDet&w=164&h=164&c=7&dpr=1.5&o=7&rm=3",
+   name:"Onion (Pyaaz)",
    weight:"100g",
    price:"18",
    Add:"ADD",
   }, 
    {
-   img:"https://www.bing.com/th/id/OIP.xc38bPAhfWV-4GXCKnFLpgAAAA?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
-   name:"Green Chilli (Hari Mirch)",
+   img:"https://www.bing.com/th/id/OIP.RmiqcAGFJxe3RecfT4yH8QHaE5?w=193&h=135&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:"Potato (Aaloo)",
    weight:"100g",
    price:"18",
    Add:"ADD",
   }, 
    {
-   img:"https://www.bing.com/th/id/OIP.xc38bPAhfWV-4GXCKnFLpgAAAA?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
-   name:"Green Chilli (Hari Mirch)",
+   img:"https://2.imimg.com/data2/FC/YH/IMVENDOR-1186229/shalini_10-250x250.jpg",
+   name:"English Cucumber (Kakdi)",
    weight:"100g",
    price:"18",
    Add:"ADD",
   }, 
   
+  {
+   img:"https://www.bing.com/th/id/OIP.QKYaL8abVFMBywLyrHbUKAHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:"Ginger (Adrak)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, 
+
+   {
+   img:"https://www.bing.com/th/id/OIP.KQJ4mRX11pYISFbu0ZuoyQHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:" Carrot (Gajar)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, 
+  {
+   img:"https://www.bing.com/th/id/OIP.KQJ4mRX11pYISFbu0ZuoyQHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:" Carrot (Gajar)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, {
+   img:"https://www.bing.com/th/id/OIP.KQJ4mRX11pYISFbu0ZuoyQHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:" Carrot (Gajar)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, {
+   img:"https://www.bing.com/th/id/OIP.KQJ4mRX11pYISFbu0ZuoyQHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:" Carrot (Gajar)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, {
+   img:"https://www.bing.com/th/id/OIP.KQJ4mRX11pYISFbu0ZuoyQHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:" Carrot (Gajar)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, 
+
+   {
+   img:"https://www.bing.com/th/id/OIP.KQJ4mRX11pYISFbu0ZuoyQHaHa?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2",
+   name:" Carrot (Gajar)",
+   weight:"100g",
+   price:"18",
+   Add:"ADD",
+  }, 
  
 ]
 
 
 
 function Vegetable() {
+  
   return (
     <div className=''>
-       <div className='h-screen w-[85%]  border border-black mt-24 mx-[100px]  overflow-scroll  '>
+       <div className='h-screen w-[92%] fixed border border-black mt-24 mx-[60px]  overflow-scroll  '>
       
         <h6 className='border-b p-2 font-bold '>Stock up on daily essentials</h6>
-        <div className='flex '>
+        <div className='flex justify-around '>
         <div className=''>
         
            {
@@ -97,10 +146,13 @@ function Vegetable() {
             ))
            }
            </div>
-          <div className='flex justify-around'>
+          <div className='flex justify-around flex-wrap ' >
+
+          
+           
           {
             Hariyali.map((item,index)=>(
-              <div key={index} className='h-[300px] w-[180px] border border-gray-300  rounded-2xl  m-4'>
+              <div key={index} className='h-[300px] w-[180px]   border border-gray-300  rounded-2xl  m-4'>
               <img src={item.img} alt="" className='h-[170px] w-[200px] px-2 rounded-xl  '/>
               <p className=' text-sm pl-3 pt-1'>{item.name}</p>
               <p className=' text-sm text-gray-300 pl-3 py-2'>{item.weight}</p>
@@ -119,7 +171,13 @@ function Vegetable() {
               
             ))
           }
+         
           </div>
+          
+          
+          
+          
+          
           </div>
           </div>
           </div>
