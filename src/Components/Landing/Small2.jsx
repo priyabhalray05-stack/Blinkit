@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 const categories=[
     {
         img:"https://tse4.mm.bing.net/th/id/OIP.LJbPx2SfUJrhScmzCzHiiAAAAA?pid=ImgDet&w=159&h=161&c=7&o=7&rm=3",name:"Masala Oil & More",
@@ -17,13 +18,15 @@ const categories=[
 function Small2() {
   return (
     
-    <div className='w-full grid grid-cols-10 ml-4' >
+    <div className='w-full  mt-8 grid grid-cols-10 ml-4' >
        {
         categories.map((item,index)=>( 
-            <div key={index} className='mx-6 mt-6'>
+            <NavLink to="/Milk">
+            <div key={index} className='mx-2 mt-6'>
                 <img src={item.img} alt="" className='h-24 w-24  rounded-2xl'/>
-                <p className='text-sm pl-6'>{item.name}</p>
+                <p className='text-sm pl-2'>{item.name}</p>
             </div>
+            </NavLink>
         ))
        }
 

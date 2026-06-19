@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Landing/Navbar'
+// import Signup from '../Components/Landing/signup'
 import Card from '../Components/Landing/Card'
 import Pharmacy from '../Components/Landing/Pharmacy'
 import Small from '../Components/Landing/Small'
@@ -8,11 +9,13 @@ import Backery from '../Components/Landing/Backery'
 import Snacks from '../Components/Landing/Snacks'
 import Discription from '../Components/Landing/Discription'
 import Footer from '../Components/Landing/Footer'
-import Zero from  '../Components/Landing/Zero'
+
+
 function Landing() {
   return (
     <div>
       <Navbar/>
+      {/* <Signup/> */}
       <Card/>
       <Pharmacy/>
       <Small/>
@@ -21,7 +24,8 @@ function Landing() {
       <Snacks/>
       <Discription/>
       <Footer/>
-      <Zero/>
+      
+      
     </div>
   )
 }

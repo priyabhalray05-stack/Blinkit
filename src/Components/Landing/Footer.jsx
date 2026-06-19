@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const images=[
     {img:"https://tse4.mm.bing.net/th/id/OIP.z9HkUJKEHLrkIAYVY9jZcAAAAA?pid=ImgDet&w=159&h=81&c=7&o=7&rm=3"},
@@ -15,12 +16,14 @@ const images=[
 function Footer() {
   return (
     <div>
-    <div className='flex gap-10 pt-10'> 
+    <div className='flex justify-center gap-10 pt-10 pr-20'> 
         <p className='text-[12px] text-gray-500 pt-2 pl-30'>© Blink Commerce Private Limited, 2016-2026</p>
         {
             images.map((item,index)=>(
                 <div key={index}>
-                 <img src={item.img} alt="" className='h-[35px]' />
+                  <NavLink>
+                 <img src={item.img} onClick={NavLink} alt="" className='h-[35px]' />
+                 </NavLink>
                 </div>
             ))
         }
